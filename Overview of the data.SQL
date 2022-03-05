@@ -76,3 +76,8 @@ INNER JOIN (
 ON
   pop.country_name = size.country_name
 ORDER BY country_area desc
+
+#6-Number of Countries starting with A
+SELECT COUNT(DISTINCT country_name) as country_name
+FROM `bigquery-public-data.census_bureau_international.country_names_area`
+WHERE country_name LIKE 'A%'
