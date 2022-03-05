@@ -159,7 +159,7 @@ The repository showcases a basic analysis of the census data across the globe. T
   
   ![image](https://user-images.githubusercontent.com/99423745/156885210-576914b7-cc2c-4c25-ad0c-ccad431f2993.png)
 
-# Visualization.Google Studio
+# Visualization-Google Studio.SQL
   
   1. Age Specific Fertility Rate in India between 2000 and 2021
   
