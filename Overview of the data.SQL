@@ -2,7 +2,7 @@
 
 #1-number of geographical areas
 SELECT 
-    COUNT(DISTINCT (country_name))
+    COUNT(DISTINCT (country_name)) as country_name
 FROM `bigquery-public-data.census_bureau_international.country_names_area`
 
 #2-largest geographical area
