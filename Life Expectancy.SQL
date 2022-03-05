@@ -16,7 +16,7 @@ LIMIT 5
 
 #2-Number of Countries with Life expectancy above 80
 SELECT
-  COUNT(age.country_name)
+  COUNT(age.country_name) as Life_above_80
 FROM (
   SELECT
     country_name,
