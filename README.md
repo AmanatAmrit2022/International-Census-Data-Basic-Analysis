@@ -158,4 +158,14 @@ The repository showcases a basic analysis of the census data across the globe. T
   6. Number of Countries starting with A
   
   ![image](https://user-images.githubusercontent.com/99423745/156885210-576914b7-cc2c-4c25-ad0c-ccad431f2993.png)
+
+# Visualization.Google Studio
   
+  1. Age Specific Fertility Rate in India between 2000 and 2021
+  
+  ![image](https://user-images.githubusercontent.com/99423745/156892126-e9df4eb7-dbcd-4afb-a682-cc2798a0a71c.png)
+
+  
+  2. Countries Facing Emigration
+  
+  ![image](https://user-images.githubusercontent.com/99423745/156892212-535873c4-84e5-475f-8a5f-544ddcaba8a8.png)
