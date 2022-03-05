@@ -31,7 +31,30 @@ WHERE
         FROM
             `bigquery-public-data.census_bureau_international.country_names_area`)
 
-#4-population of countries with largest area
+#4-population and area of the largest and the smallest geographical area
+SELECT
+  pop.country_name,
+  pop.population,
+  size.country_area
+FROM (
+  SELECT
+    country_name,
+    midyear_population as population
+  FROM
+    `bigquery-public-data.census_bureau_international.midyear_population`
+  WHERE
+    year = 2018) pop
+INNER JOIN (
+  SELECT
+    country_name,
+    country_area
+  FROM
+    `bigquery-public-data.census_bureau_international.country_names_area`) size
+ON
+  pop.country_name = size.country_name
+WHERE pop.country_name = 'Russia' OR pop.country_name = 'Monaco'
+
+#5-population of countries with largest area
 SELECT
   pop.country_name,
   pop.population,
