@@ -27,7 +27,7 @@ ORDER BY
 #2-Average Migration in Countries with Highest Population (China and India) in the past decade (2011-2021)
 SELECT
   migration.country_name,
-  AVG(migration.net_migration),
+  AVG(migration.net_migration) as avg_net_migration,
 FROM (
   SELECT
     country_name,
