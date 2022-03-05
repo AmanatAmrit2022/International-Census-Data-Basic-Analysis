@@ -30,3 +30,26 @@ WHERE
             MIN(country_area)
         FROM
             `bigquery-public-data.census_bureau_international.country_names_area`)
+
+#4-population of countries with largest area
+SELECT
+  pop.country_name,
+  pop.population,
+  size.country_area
+FROM (
+  SELECT
+    country_name,
+    midyear_population as population
+  FROM
+    `bigquery-public-data.census_bureau_international.midyear_population`
+  WHERE
+    year = 2018) pop
+INNER JOIN (
+  SELECT
+    country_name,
+    country_area
+  FROM
+    `bigquery-public-data.census_bureau_international.country_names_area`) size
+ON
+  pop.country_name = size.country_name
+ORDER BY country_area desc
