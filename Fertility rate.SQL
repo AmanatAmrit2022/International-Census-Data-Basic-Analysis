@@ -38,5 +38,3 @@ SELECT
     `bigquery-public-data.census_bureau_international.age_specific_fertility_rates`
   where year = 2021  
   ORDER BY fertility_rate_25_29 desc
-  
-  #5-
